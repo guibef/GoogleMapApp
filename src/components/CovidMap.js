@@ -34,7 +34,7 @@ class CovidMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           yesIWantToUseGoogleMapApiInternals
-          onGoogleApiLoaded={({ map, maps }) => this.handleMapInitialized()}
+          onGoogleApiLoaded={() => this.handleMapInitialized()}
           onChange={({zoom, bounds}) => {
               this.setState({
                   zoom,
