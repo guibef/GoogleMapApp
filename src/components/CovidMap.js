@@ -52,7 +52,6 @@ class CovidMap extends Component {
     async handleMapInitialized() {
         try {
             const response = await CovidCaseService.getUsData(); //Promise
-            //console.log(response.data);
             this.setState({
                 points: MapUtil.createClusterPoints(response.data)
             });
