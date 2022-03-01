@@ -23,7 +23,7 @@ class CovidMap extends Component {
       points: {} // all points from the API
   };
 
-  limit = 10;
+  limit = 20;
  
   render() {
     return (
